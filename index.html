@@ -31,7 +31,7 @@
 
         p {
             font-size: 18px;
-            color: #bf6969;
+            color: #425c82;
             line-height: 1.6;
             margin: 20px;
         }
@@ -97,11 +97,26 @@
         <p>We offer comprehensive Trade Finance Services through EuroExim Bank, a global financial institution with a head office in St. Lucia and a representative office in London. Our services ensure smooth international transactions and secure financial solutions.</p>
     </section>
 
-  <!-- Image Section: Cargoship, Downtown -->
-    <section class="content">
-        <img src="cargoship.jpeg" alt="Cargo Ship transporting goods globally.">
-        <img src="downtown.jpeg" alt="A bustling downtown area symbolizing business growth and expansion.">
-    </section>
+<style>
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+        gap: 20px; /* Space between images */
+        margin: 20px;
+    }
+
+    .grid-container img {
+        width: 100%; /* Images take full width of their grid column */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px;
+    }
+</style>
+
+<div class="grid-container">
+    <img src="cargoship.jpeg" alt="Cargo Ship transporting goods globally">
+    <img src="downtown.jpeg" alt="Downtown area symbolizing business growth and expansion">
+</div>
+
 
     <footer>
         <p>Contact us: <a href="mailto:emporiumoftheworld@proton.me">emporiumoftheworld@proton.me</a></p>
