@@ -20,14 +20,12 @@
             background-color: #2c3e50;
             color: white;
         }
-    
+
         h1 {
             color: #fff; /* Changed to white for better contrast */
             font-size: 36px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Added text shadow */
         }
-
-     
 
         p {
             font-size: 18px;
@@ -45,19 +43,7 @@
         }
 
         .content {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
             margin: 20px;
-        }
-
-        .content img {
-            margin: 10px;
-        }
-
-        .large-image {
-            width: 100%;
-            margin-top: 30px;
         }
 
         footer {
@@ -71,6 +57,39 @@
             color: white;
             text-decoration: none;
         }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h2 {
+            margin-top: 30px; /* Add margin to separate from previous content */
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+            gap: 20px; /* Space between images */
+            margin: 20px;
+        }
+
+        .grid-container img {
+            width: 100%; /* Images take full width of their grid column */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px;
+        }
     </style>
 </head>
 <body>
@@ -79,123 +98,102 @@
         <h1>Emporium of the World</h1>
         <p>Your Gateway to Global Trade Finance and Trending Commodities</p>
     </header>
-   <section class="content">
+
+    <section class="content">
         <h2>We Have Access to Mainstream Market Trending Commodities</h2>
         <p>
             Explore our diverse range of commodities and products, including:
             <strong>Carbon Credits, EV, Energy, Metals, Agriculture, Chemicals, Defense, Office Supplies, Pharmaceuticals, Softs, Water, Construction, Seafood, Delicacy Foods, Meats & Livestock, Alcoholic Beverage, Skincare & Personal Care, Oilfield Equipment, Machinery, Aviation</strong>. 
             These commodities and products are sourced from eligible and vetted suppliers targeting specific markets across the globe.
         </p>
-    <!-- Larger Image Section: Historic Site -->
-    <section>
+
+        <!-- Larger Image Section: Historic Site -->
         <img src="historicsite.jpg" alt="A beautiful historical site representing cultural heritage and long-standing trade traditions." class="large-image">
-    </section></a></p>
 
-<h2>Market Trending Commodities and Products</h2>
-<table border="1">
-    <thead>
-        <tr>
-            <th>Commodity/Product</th>
-            <th>Industry</th>
-            <th>Origin</th>
-            <th>Target Market</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Mineral Fertilizers</td>
-            <td>Agriculture</td>
-            <td>Kazakhstan</td>
-            <td>Global</td>
-        </tr>
-        <tr>
-            <td>Urea N-46</td>
-            <td>Agriculture</td>
-            <td>Turkmenistan</td>
-            <td>Global</td>
-        </tr>
-        <tr>
-            <td>Ammonia Nitrite</td>
-            <td>Agriculture</td>
-            <td>Kazakhstan</td>
-            <td>CIS/GCC</td>
-        </tr>
-        <tr>
-            <td>Ammonia Sulfate</td>
-            <td>Agriculture</td>
-            <td>Kazakhstan</td>
-            <td>CIS/GCC</td>
-        </tr>
-        <tr>
-            <td>Lubricants</td>
-            <td>Various</td>
-            <td>Kazakhstan</td>
-            <td>Europe/Africa</td>
-        </tr>
-        <tr>
-            <td>Diesel Generators</td>
-            <td>Various</td>
-            <td>Kazakhstan</td>
-            <td>GCC/Africa</td>
-        </tr>
-        <tr>
-            <td>EV Charging Infrastructure</td>
-            <td>Various</td>
-            <td>Kazakhstan</td>
-            <td>Europe/GCC/Africa</td>
-        </tr>
-    </tbody>
-</table>
+        <h2>Market Trending Commodities and Products</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Commodity/Product</th>
+                    <th>Industry</th>
+                    <th>Origin</th>
+                    <th>Target Market</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mineral Fertilizers</td>
+                    <td>Agriculture</td>
+                    <td>Kazakhstan</td>
+                    <td>Global</td>
+                </tr>
+                <tr>
+                    <td>Urea N-46</td>
+                    <td>Agriculture</td>
+                    <td>Turkmenistan</td>
+                    <td>Global</td>
+                </tr>
+                <tr>
+                    <td>Ammonia Nitrite</td>
+                    <td>Agriculture</td>
+                    <td>Kazakhstan</td>
+                    <td>CIS/GCC</td>
+                </tr>
+                <tr>
+                    <td>Ammonia Sulfate</td>
+                    <td>Agriculture</td>
+                    <td>Kazakhstan</td>
+                    <td>CIS/GCC</td>
+                </tr>
+                <tr>
+                    <td>Lubricants</td>
+                    <td>Various</td>
+                    <td>Kazakhstan</td>
+                    <td>Europe/Africa</td>
+                </tr>
+                <tr>
+                    <td>Diesel Generators</td>
+                    <td>Various</td>
+                    <td>Kazakhstan</td>
+                    <td>GCC/Africa</td>
+                </tr>
+                <tr>
+                    <td>EV Charging Infrastructure</td>
+                    <td>Various</td>
+                    <td>Kazakhstan</td>
+                    <td>Europe/GCC/Africa</td>
+                </tr>
+            </tbody>
+        </table>
 
-<h3>Notes</h3>
-<ul>
-    <li><strong>Commodity</strong> reflects the name of the heavy commodity.</li>
-    <li><strong>Product</strong> reflects an actual physical or liquid product.</li>
-    <li><strong>Industry</strong> is where the particular commodity or product is being used.</li>
-    <li><strong>Origin</strong> is the country where the commodity or product is made.</li>
-</ul>
+        <h3>Notes</h3>
+        <ul>
+            <li><strong>Commodity</strong> reflects the name of the heavy commodity.</li>
+            <li><strong>Product</strong> reflects an actual physical or liquid product.</li>
+            <li><strong>Industry</strong> is where the particular commodity or product is being used.</li>
+            <li><strong>Origin</strong> is the country where the commodity or product is made.</li>
+        </ul>
 
-<p>These commodities and products are supplied by eligible and vetted suppliers that have a target market for specific countries and regions.</p>
+        <p>These commodities and products are supplied by eligible and vetted suppliers that have a target market for specific countries and regions.</p>
 
-<!-- Contact Information -->
-<h2>Contact Us</h2>
-<p>Email: <a href="mailto:emporiumoftheworld@proton.me">emporiumoftheworld@proton.me</a></p>
-
-
-  
+        <!-- Contact Information -->
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:emporiumoftheworld@proton.me">emporiumoftheworld@proton.me</a></p>
 
         <h2>Trade Finance Services</h2>
         <p>We offer comprehensive Trade Finance Services through EuroExim Bank, a global financial institution with a head office in St. Lucia and a representative office in London. Our services ensure smooth international transactions and secure financial solutions.</p>
     </section>
 
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-        gap: 20px; /* Space between images */
-        margin: 20px;
-    }
-
-    .grid-container img {
-        width: 100%; /* Images take full width of their grid column */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 5px;
-    }
-</style>
-
-<div class="grid-container">
-    <img src="cargoship.jpeg" alt="Cargo Ship transporting goods globally">
-    <img src="downtown.jpeg" alt="Downtown area symbolizing business growth and expansion">
-</div>
-
+    <div class="grid-container">
+        <img src="cargoship.jpeg" alt="Cargo Ship transporting goods globally">
+        <img src="downtown.jpeg" alt="Downtown area symbolizing business growth and expansion">
+    </div>
 
     <footer>
         <p>Contact us: <a href="mailto:emporiumoftheworld@proton.me">emporiumoftheworld@proton.me</a></p>
-        
+        <p>&copy; 2024 Emporium of the World. All Rights Reserved.</p>
     </footer>
-</body>
 
-     
     <h2>We offer Trade Finance Services too through Euro Exim Bank</h2>
     <p>Euro Exim Bank Limited is an innovative global financial institution with Head Office in St. Lucia and a Representative Office in London. We hold a "Class A" international banking license from the Financial Services Regulatory Authority (FSRA) of St. Lucia. This license provides authorization to conduct business with third parties across industries and geographies worldwide, exercising strong due diligence, full compliance, and operational excellence in our processes.</p>
 
@@ -207,27 +205,8 @@
     <ul>
         <li><strong>Letter of Credit:</strong> A document issued by a bank that guarantees payment to a seller on behalf of a buyer.</li>
         <li><strong>Bank Guarantee and Tender Guarantee:</strong> A promise by a bank to cover a loss in case a borrower defaults on a loan.</li>
-        <li><strong>Proof of Funds:</strong> A document or statement from a financial institution that verifies an individual or entity has a certain amount of money available.</li>
-        <li><strong>Pre-Advice Services:</strong> Services offered by banks to inform the beneficiary of the details of a letter of credit before the shipping documents are presented.</li>
-        <li><strong>Blocked Fund Services:</strong> Services that block a certain amount of funds in an account for a specific purpose.</li>
-        <li><strong>Bank Comfort Letters:</strong> A document that assures a third party of the financial soundness of a particular individual or company.</li>
-        <li><strong>Ready, Willing, and Able Letters:</strong> A document that confirms that an individual or company is financially capable of fulfilling a contract.</li>
+        <li><strong>Trade Finance Solutions:</strong> Comprehensive solutions tailored to specific client needs.</li>
     </ul>
-    
-    <!-- Futuristic Image Section -->
-    <section>
-        <img src="futurecity.jpeg" alt="Futuristic city with advanced infrastructure representing future trade possibilities." class="large-image">
-    </section>
-    
-    <h3>Contact Information for Euro Exim Bank</h3>
-    <p>Email: <a href="mailto:info@euroeximbank.com">info@euroeximbank.com</a></p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/heidi-peterson-b52aa3187/" target="_blank">Heidi Peterson's LinkedIn</a></p>
-    <p>Phone: <a href="tel:+13525775151">+1 (352) 577-5151</a></p>
-</div>
-
-<footer>
-    <p>&copy; 2024 Emporium of the World. All Rights Reserved.</p>
-</footer>
 
 </body>
 </html>
